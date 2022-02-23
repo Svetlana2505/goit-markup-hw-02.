@@ -1,20 +1,25 @@
+:root {
+    --brand-color:#2196F3;
+}
 
 
-/* font-family: 'Raleway', sans-serif; */
 
 body {
     font-family: 'Roboto', sans-serif;
     color: #212121;
-    background-color: #E5E5E5;
+    background-color: #fff;
 }
+
+/* font-family: 'Raleway', sans-serif; */
 
 a {
     text-decoration: none;
 }
 
-:root {
-    --brand-color:#2196F3;
+.list {
+    list-style: none;
 }
+
 
 /* шапка */
 
@@ -30,7 +35,7 @@ a {
     color: var(--brand-color);
 }
 
-.nav-link {
+.header-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -38,12 +43,12 @@ a {
     text-decoration: none;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.header-link:hover,
+.header-link:focus {
     color: var(--brand-color);
 }
 
-.contact-link {
+.header-list-link{
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -51,14 +56,14 @@ a {
     color: #757575;
 }
 
-.contact-link:hover,
-.contact-link:focus{
+.header-list-link:hover,
+.header-list-link:focus{
     color: var(--brand-color); 
 }
 
 /* портфолио */
 
-.filter {
+.filter-btn {
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
@@ -66,8 +71,8 @@ a {
     border: none;
 }
 
-.filter:hover,
-.filter:focus {
+.filter-btn:hover,
+.filter-btn:focus {
     background-color: var(--brand-color);
     color: #fff;
     cursor: pointer;
@@ -75,20 +80,20 @@ a {
 
 /* project */
 
-.group {
+.project-item {
     width: 370px;
     height: 404px;
     border: 1px solid #EEEEEE;
 }
 
-.group-title{
+.project-title{
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
 }
 
-.group-item {
+.project-text{
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
@@ -99,6 +104,10 @@ a {
 
 /* footer */
 
+.footer {
+    background-color: #2F303A;
+}
+
 .footer-logo {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
@@ -107,22 +116,22 @@ a {
     color: #fff;
 }
 
-.contacts-address{
+.footer-address{
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    /* color: #FFFFFF; */
+    color: #FFFFFF;
 }
 
-.contacts-link{
+.footer-link{
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    /* color: rgba(255, 255, 255, 0.6); */
+    color: rgba(255, 255, 255, 0.6);
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.footer-link:hover,
+.footer-link:focus {
     color: var(--brand-color);
 }
 
