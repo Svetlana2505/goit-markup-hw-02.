@@ -1,5 +1,7 @@
 :root {
-    --brand-color:#2196F3;
+    --primary-text-color:#212121;
+    --title-text-color:#757575;
+    --accent-color:#2196F3;
 }
 
 
@@ -32,7 +34,7 @@ a {
 }
 
 .logo-item {
-    color: var(--brand-color);
+    color: var(--accent-color);
 }
 
 .header-link {
@@ -45,7 +47,11 @@ a {
 
 .header-link:hover,
 .header-link:focus {
-    color: var(--brand-color);
+    color: var(--accent-color);
+}
+
+.header-menu .header-link.current {
+    color: var(--accent-color);
 }
 
 .header-list-link{
@@ -53,12 +59,12 @@ a {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--title-text-color);
 }
 
 .header-list-link:hover,
 .header-list-link:focus{
-    color: var(--brand-color); 
+    color: var(--accent-color); 
 }
 
 /* портфолио */
@@ -73,7 +79,7 @@ a {
 
 .filter-btn:hover,
 .filter-btn:focus {
-    background-color: var(--brand-color);
+    background-color: var(--accent-color);
     color: #fff;
     cursor: pointer;
 }
@@ -97,7 +103,7 @@ a {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--title-text-color);
 }
 
 
@@ -114,6 +120,7 @@ a {
     line-height: 31px; 
     letter-spacing: 0.03;   
     color: #fff;
+   
 }
 
 .footer-address{
@@ -132,7 +139,7 @@ a {
 
 .footer-link:hover,
 .footer-link:focus {
-    color: var(--brand-color);
+    color: var(--accent-color);
 }
 
 
