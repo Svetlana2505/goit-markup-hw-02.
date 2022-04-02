@@ -2,14 +2,16 @@
     --primary-text-color:#212121;
     --title-text-color:#757575;
     --accent-color:#2196F3;
+    --color-white:#fff;
 }
 
 
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #212121;
-    background-color: #fff;
+    color: var(--primary-text-color);
+    background-color: var(--color-white);
+    letter-spacing: 0.03em;
 }
 
 /* font-family: 'Raleway', sans-serif; */
@@ -28,8 +30,7 @@ a {
 .logo {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
-    line-height: 31px; 
-    letter-spacing: 0.03em;
+    line-height: 1.2; 
     color: #000;
 }
 
@@ -40,9 +41,9 @@ a {
 .header-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
+    color: var(--primary-text-color);
 }
 
 .header-link:hover,
@@ -57,7 +58,7 @@ a {
 .header-list-link{
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
@@ -69,40 +70,48 @@ a {
 
 /* портфолио */
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
 .filter-btn {
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.03em;
+    line-height: 1.6;
     border: none;
 }
+
 
 .filter-btn:hover,
 .filter-btn:focus {
     background-color: var(--accent-color);
-    color: #fff;
+    color: var(--color-white);
     cursor: pointer;
 }
 
 /* project */
 
-.project-item {
-    width: 370px;
-    height: 404px;
-    border: 1px solid #EEEEEE;
-}
-
 .project-title{
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
+    color: var(--primary-text-color);
 }
 
-.project-text{
+.project-text,
+.project-subtext{
     font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.03em;
+    line-height: 1.8;
     color: var(--title-text-color);
 }
 
@@ -117,23 +126,24 @@ a {
 .footer-logo {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
-    line-height: 31px; 
-    letter-spacing: 0.03;   
-    color: #fff;
+    line-height: 31px;    
+    color: var(--color-white);
    
+}
+
+.footer-list {
+    font-style: normal;
 }
 
 .footer-address{
     font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--color-white);
 }
 
 .footer-link{
     font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -141,5 +151,3 @@ a {
 .footer-link:focus {
     color: var(--accent-color);
 }
-
-
