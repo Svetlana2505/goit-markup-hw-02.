@@ -3,6 +3,7 @@
     --title-text-color:#757575;
     --accent-color:#2196F3;
     --color-white:#fff;
+    --background-color:#2F303A ;
 }
 
 
@@ -66,6 +67,65 @@ a {
 .header-list-link:hover,
 .header-list-link:focus{
     color: var(--accent-color); 
+}
+
+/* Страница 1 */
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--color-white);
+    background-color: var(--background-color);
+}
+.hero-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    border: none;
+}
+
+.hero-btn:hover,
+.hero-btn:focus  {
+    background-color: var(--accent-color);
+    color: var(--color-white);
+}
+
+.feature-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--primary-text-color);
+}
+
+.feature-text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--title-text-color);
+}
+
+.working,
+.team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    color: var(--primary-text-color);
+}
+
+.team-item-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--primary-text-color);
+}
+
+.team-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--title-text-color);
+
 }
 
 /* портфолио */
